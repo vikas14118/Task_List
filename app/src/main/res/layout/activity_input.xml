@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hello_world.vikas.task_list.InputActivity">
+<include android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/too"
+    layout="@layout/toolbar"
+    ></include>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Title:-"
+        android:ems="10"
+        android:layout_below="@+id/too"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/editText"
+        android:editable="false"
+        android:clickable="false"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Description:-"
+        android:ems="10"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp"
+        android:id="@+id/editText2"
+        android:editable="false"
+        android:clickable="false"
+        android:enabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/editText4"
+        android:editable="true"
+        android:hint="Title" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignParentEnd="true"
+        android:editable="true"
+        android:hint="Decription" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:onClick="toolclick1"
+        android:background="#ADD8E6"
+        android:id="@+id/toolbutton"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText5" />
+
+</RelativeLayout>
